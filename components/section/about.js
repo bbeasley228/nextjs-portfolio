@@ -1,22 +1,9 @@
 import Image from "next/image";
 import sAge from "s-age";
-import { useState, useEffect } from "react";
 import Waypoints from "../dust/waypoints";
 
 export default function About() {
   let umur = sAge("Nov 16 2007");
-  let [gh, setGh] = useState('Fetching...');
-  useEffect(() => {
-    (async() => {
-      try {
-        const res = await fetch("https://api.github.com/users/JastinXyz");
-        const data = await res.json();
-        setGh(data);
-      } catch {
-        setGh({ public_repos: "several" })
-      }
-    })()
-  }, [])
 
   return (
     <>
@@ -33,7 +20,7 @@ export default function About() {
         ></path>
       </svg>
       <div className="bg-[#e3f2fd] px-6">
-        <Waypoints target={'toabout'}>
+        <Waypoints target={"toabout"}>
           <section id="about" className="text-black py-20">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="flex justify-center md:mb-0 mb-20 py-5">
@@ -81,11 +68,11 @@ export default function About() {
                 </p>
                 <p className="mt-5">
                   One more thing, I have created{" "}
-                  <span className="font-bold">{gh.public_repos}</span> public
-                  repository on my Github. Various repositories such as
-                  templates or even just a package to make things easier. There
-                  are several serious projects but now they are rarely developed
-                  due to conflicts with school work.
+                  <span className="font-bold"></span> public repository on my
+                  Github. Various repositories such as templates or even just a
+                  package to make things easier. There are several serious
+                  projects but now they are rarely developed due to conflicts
+                  with school work.
                 </p>
                 {/* <div class="tooltip tooltip-open tooltip-right mt-5" data-tip={`${gh.followers} Followers, ${gh.following} Following`}>
                 <button class="btn"><FaGithub className="mr-2 w-5 h-5" /> Github</button>

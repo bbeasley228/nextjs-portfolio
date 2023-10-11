@@ -1,6 +1,5 @@
 import Logo from "./dust/logo";
-import { FaCode, FaHeart, FaGithub, FaFacebook, FaYoutube, FaInstagram, FaNpm } from "react-icons/fa"
-import Social from "./dust/social";
+import { FaCode, FaHeart } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -14,15 +13,10 @@ export default function Footer() {
             <FaCode className="fill-indigo-500 hover:scale-110 transition delay-75 inline-block" />
             {` with `}
             <FaHeart className="fill-error hover:scale-110 transition delay-75 inline-block" />{" "}
-            by{" "}
-            <Logo />
+            by <Logo />
             <br />
-            &copy; {new Date().getFullYear()} Copyright JstnLT.
+            &copy; {new Date().getFullYear()} Copyright Byron.
           </p>
-        </div>
-        <div>
-          <span className="footer-title ml-2">Social</span>
-          <Social type={'footer'} />
         </div>
       </footer>
     </>
