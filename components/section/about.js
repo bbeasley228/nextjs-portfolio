@@ -28,16 +28,16 @@ export default function About() {
                   className="z-50"
                   src="/img/about.svg"
                   alt="about me"
-                  width={200}
-                  height={200}
+                  width={285}
+                  height={285}
                   data-aos="fade-up-right"
                 />
                 <Image
                   src="/img/blob/2.svg"
                   className="mt-5 md:mt-20 absolute"
                   alt="blob"
-                  width={350}
-                  height={350}
+                  width={480}
+                  height={480}
                   data-aos="fade-up-right"
                   data-aos-duration="1500"
                 />
@@ -52,27 +52,21 @@ export default function About() {
                   data-aos-duration="1000"
                 ></div>
                 <p className="mt-2">
-                  {`I live in Purwokerto, Indonesia. My full name is Jastin
-                  Linggar Tama, just call me Jastin. I'm ${umur} years old. A Software
-                  Engineering student, I have known Programming since 2020 and
-                  am quite familiar with HTML, CSS, Javascript and several other
-                  languages ​​& frameworks.`}
+                  {`I am Byron Beasley, a senior software engineer with over 9 years of experience spearheading high-quality web and mobile applications. Specializing primarily in cutting-edge JavaScript libraries and frameworks like React, React Native, Next.js, and Node.js, I have developed, deployed, and maintained large-scale digital solutions for multi-billion-dollar companies, including Instagram, Wipro, and Ford Motor Company.`}
                 </p>
                 <p className="mt-5">
-                  A Little Story, In the past, I preferred to learn about Back
-                  End but when I got to know Front End frameworks like NextJs, I
-                  think now I prefer to learn about Front End. But I&apos;m also
-                  learning New Things about Back End in PHP now. I don&apos;t
-                  know, I&apos;m a person who likes to learn new things but
-                  rarely takes it seriously.
+                  <span className="font-bold">Meet Byron Beasley!</span> Byron
+                  creates visually appealing and user-friendly products with a
+                  focus on performance and reliability. A strong believer in
+                  continuous learning and mentoring, he is passionate about
+                  educating junior and mid-level engineers in front-end
+                  development best practices.
                 </p>
                 <p className="mt-5">
-                  One more thing, I have created{" "}
-                  <span className="font-bold"></span> public repository on my
-                  Github. Various repositories such as templates or even just a
-                  package to make things easier. There are several serious
-                  projects but now they are rarely developed due to conflicts
-                  with school work.
+                  <span className="font-bold">Connect with Byron</span> and
+                  discover the incredible blend of skill, creativity, and
+                  efficiency he can bring to your next software development
+                  project.
                 </p>
                 {/* <div class="tooltip tooltip-open tooltip-right mt-5" data-tip={`${gh.followers} Followers, ${gh.following} Following`}>
                 <button class="btn"><FaGithub className="mr-2 w-5 h-5" /> Github</button>

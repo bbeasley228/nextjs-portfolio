@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.makeGapR1> :not(:last-child) {
+.makeGapR1 > :not(:last-child) {
   margin-right: 4px;
 }
 
-.makeGapR7> :not(:last-child) {
+.makeGapR7 > :not(:last-child) {
   margin-right: 1.75rem;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 192, 255, 0.79) 12%,
+    rgb(0, 166, 216) 40%,
+    rgb(255, 255, 255) 100%
+  );
 }

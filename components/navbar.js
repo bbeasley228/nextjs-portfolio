@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaGithub } from "react-icons/fa";
-import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdCode } from "react-icons/md";
 import { IoIosPaperPlane, IoMdHome, IoMdPerson } from "react-icons/io";
 import Logo from "./dust/logo";
@@ -14,17 +13,17 @@ export default function Navbar() {
 
   const [dark, setDark] = useState(false);
   const themeSwitch = () => {
-    let html = document.querySelector("html");
-    let themeNow = html.getAttribute("data-theme");
-    if (!dark && themeNow !== "dracula") {
-      html.setAttribute("data-theme", "dracula");
-      localStorage.setItem("theme", "dracula");
-      setDark(true);
-    } else {
-      html.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-      setDark(false);
-    }
+    // let html = document.querySelector("html");
+    // let themeNow = html.getAttribute("data-theme");
+    // if (!dark && themeNow !== "dracula") {
+    //   html.setAttribute("data-theme", "dracula");
+    //   localStorage.setItem("theme", "dracula");
+    //   setDark(true);
+    // } else {
+    //   html.setAttribute("data-theme", "light");
+    //   localStorage.setItem("theme", "light");
+    //   setDark(false);
+    // }
   };
 
   useEffect(() => {
@@ -72,7 +71,7 @@ export default function Navbar() {
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                 >
                   <MdCode className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
-                  Projects
+                  Skills
                 </a>
                 <a
                   href="#contact"
@@ -85,11 +84,18 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
                 <a
-                  href="/github"
+                  href="https://github.com/bbeasley228"
                   className="group w-full px-6 py-2 mb-2 md:mb-0 mr-0 text-base-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto"
                 >
                   <FaGithub className="w-6 h-6 inline md:mr-0 mr-2 group-hover:text-gray-600 transition ease-in-out delay-100 duration-100" />
                   <span className="md:hidden">Github</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/byron-beasley-soft/"
+                  className="group w-full px-6 py-2 mb-2 md:mb-0 mr-0 text-base-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto"
+                >
+                  <FaLinkedin className="w-6 h-6 inline md:mr-0 mr-2 group-hover:text-gray-600 transition ease-in-out delay-100 duration-100" />
+                  <span className="md:hidden">LinkedIn</span>
                 </a>
                 <label className="swap swap-rotate hidden md:grid">
                   <input
@@ -174,7 +180,7 @@ export default function Navbar() {
               </svg>
 
               <svg
-                class="w-6 h-6 swap-on fill-current"
+                className="w-6 h-6 swap-on fill-current"
                 fill="white"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

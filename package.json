@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "clsx": "^1.2.1",
     "daisyui": "^2.39.1",
+    "framer-motion": "^10.16.4",
     "lru-cache": "^7.14.1",
     "next": "13.0.3",
     "react": "18.2.0",
@@ -21,12 +22,15 @@
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
     "react-intersection-observer": "^9.4.1",
+    "react-tsparticles": "^2.12.2",
     "react-typed": "^1.2.0",
     "s-age": "^1.1.2",
     "sharp": "^0.31.2",
+    "tsparticles": "^2.12.0",
     "webhook-discord": "^3.7.8"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.13",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
